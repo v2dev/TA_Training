@@ -25,9 +25,19 @@ describe('My First Cypress Test', function () {
     // cy.get('#dateOfBirthInput').type(name.dob);
     cy.get('.subjects-auto-complete__value-container').type(name.sub);
     cy.get('#hobbiesWrapper > .col-md-9 > :nth-child(2) > .custom-control-label').click();
+    cy.get('#currentAddress').type('123 Main St Dublin Ohio');
+    cy.get('#state > .css-yk16xz-control > .css-1hwfws3').click();
+    cy.get('#react-select-3-option-1').click();
+    // cy.get('#city > .css-yk16xz-control > .css-1wy0on6 > .css-tlfecz-indicatorContainer').click();
+    cy.get('#city > .css-yk16xz-control > .css-1hwfws3').click();
+    cy.get('#react-select-4-option-1').click();
+
+    // cy.get('.css-1pahdxg-control > .css-1hwfws3').click();
+    // cy.get('.css-1pahdxg-control > .css-1hwfws3').click();
+    // cy.get('#stateCity-wrapper > :nth-child(2)').focus;
     // cy.get('#stateCity-wrapper > :nth-child(2)').click();
     // cy.get('[id="state"]').select('NCR');
     // cy.get('#stateCity-wrapper > :nth-child(3)').select(Option - 2);
-    cy.get('react-select-3-input').click();
+    // cy.get('#stateCity-wrapper').select(Option - 2);
   });
 });
